@@ -9,7 +9,46 @@
 <!-- slider -->
 
 	<div class="container">
-           <div id="slider">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel" data-slide-to="1"></li>
+			    <li data-target="#carousel" data-slide-to="2"></li>
+			  </ol>
+			  
+			<!-- Wrapper for slides -->
+  			<div class="carousel-inner">
+  				<div class="item active">
+  					<img src="{% static "images/kids_2.png" %}">
+  					<div class="carousel-caption">
+  						<h3>Help them Progress</h3>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<img src="{% static "images/kids_3.png" %}">
+  					<div class="carousel-caption">
+  						<h3>Know what they are busy with</h3>
+  					</div>
+  				</div>
+  				<div class="item">
+  					<img src="{% static "images/kids_1.png" %}">
+  					<div class="carousel-caption">
+  						<h3>Make sure they benefit from every moment</h3>
+  					</div>
+  				</div>
+  			</div>
+  			
+  			<!-- Controls -->
+			  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+		</div>
+	
+           <!-- <div id="slider">
                <ul class="slides">
                    <li class="slide slide1"><img src="{% static "images/they_benefit.png" %}" width="720" height="400" /></li>
                    <li class="slide slide2"><img src="{% static "images/they_busy.png" %}" width="720" height="400" /></li>
@@ -17,7 +56,7 @@
                    <li class="slide slide4"><img src="{% static "images/they_success.png" %}" width="720" height="400" /></li>
                    <li class="slide slide1"><img src="{% static "images/they_benefit.png" %}" width="720" height="400" /></li>
                </ul>
-           </div>
+           </div> -->
 
     </div>
 {% endblock %}
