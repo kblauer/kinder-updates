@@ -1,0 +1,100 @@
+html, body {
+
+    height: 100%;
+}
+
+footer {
+
+    padding: 17px 0 18px 0;
+}
+
+body {
+
+    background:#efffff;
+    margin: 0;
+}
+
+#logo {
+
+    width:120px;
+    height:80px;
+    float: top;
+    position:fixed;
+    top:10px;
+    left: 15px;
+}
+
+#log_button {
+
+    position:fixed;
+    top:40px;
+    right: 25px;
+    height: 30px;
+    width: 100px;
+    background: #33cc33;
+    color: white;
+    font-family: arial;
+}
+
+header{
+
+    margin-top: 35px;
+    height: 40px;
+    background: #3399FF;
+}
+
+div ul li{
+
+    list-style-type: none;
+    font-family: arial;
+}
+
+#loginPopUp{
+
+    background: white; 
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #99CCFF;
+    box-shadow: 0px 0px 5px #DBDBDB;
+    padding: 30px 30px 30px 30px;
+    margin-right: 50px;
+    float: right;
+    right: 0;
+    position: absolute;
+    /*z-index: 2; */
+}
+
+#footer{
+
+    bottom: 0;
+}
+
+footer a {
+
+    margin-left: 100;
+}
+
+.panel {
+
+    max-height:400px;
+    overflow-y:auto;  
+}
+
+.leftCol{
+
+    float: left;
+    width: 30%;
+    margin: 0;
+    text-align: left;
+}
+
+.rightCol{
+
+    float: right;
+    width: 70%;
+    margin: 0;
+    text-align: left;
+}
+
+
+

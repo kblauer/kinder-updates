@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block extraStyles %}
+<link type="text/css" rel="stylesheet" href="{% static "css/slider.css" %}" />
+{% endblock %}
+
+{% block content %}
+<!-- slider -->
+
+	<div class="container">
+           <div id="slider">
+               <ul class="slides">
+                   <li class="slide slide1"><img src="{% static "images/they_benefit.png" %}" width="720" height="400" /></li>
+                   <li class="slide slide2"><img src="{% static "images/they_busy.png" %}" width="720" height="400" /></li>
+                   <li class="slide slide3"><img src="{% static "images/they_progress.png" %}" width="720" height="400" /></li>
+                   <li class="slide slide4"><img src="{% static "images/they_success.png" %}" width="720" height="400" /></li>
+                   <li class="slide slide1"><img src="{% static "images/they_benefit.png" %}" width="720" height="400" /></li>
+               </ul>
+           </div>
+
+    </div>
+{% endblock %}
+
+{% block extraScripts %}
+<script src="{% static "js/slider.js" %}"></script>
+{% endblock %}

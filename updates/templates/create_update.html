@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="leftCol">
+        <ul>
+
+            <!--<li><p>Pick date: <input type="text" id="datepicker"></p></li> -->
+
+            <li>
+                <div id="Feedback" class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Feedback</h3>
+                  </div>
+                  <ul class="list-group">
+
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                            <li class="list-group-item"><p>here is the Feedback text </p></li>
+                        </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="rightCol container">
+        <ul>
+            <li>
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Post update</h3>
+                  </div>
+                  	<form action="/updates/create/" method="post">{% csrf_token %}
+                  	{{ form }}
+                  	<input type="submit" name="submit" value="Create Update">
+                  	</form>      
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
