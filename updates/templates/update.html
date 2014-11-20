@@ -1,25 +1,12 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} 
 
-<div class="container">
-	<div class="leftCol container">
-		<ul>
+{% block content %}
 
-			<!--<li><p>Pick date: <input type="text" id="datepicker"></p></li> -->
-			<li>
-				<div id="Updates" class="panel panel-info">
+
+				<div id="Main" class="panel panel-info">
 					<div class="panel-heading">
 						<h3 class="panel-title">Update Detail</h3>
 					</div>
-				</div>
-			</li>
-
-		</ul>
-
-	</div>
-
-	<div class="rightCol container">
-
-				<div id="Main" class="panel panel-info">
 
 					<h2>&nbsp;{{ update.updateText }}</h2>
 					<ul>
@@ -28,7 +15,5 @@
 						<li>Update Time: {{ update.updateTime }} </li>
 					</ul>
 				</div>
-	</div>
-</div>
 
 {% endblock %}

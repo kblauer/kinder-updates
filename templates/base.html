@@ -40,9 +40,15 @@
 					{% if username %}
 						{% if group == 'parent' %}
 						<li><a href="/updates/all/">View All Updates</a></li>
+						<li><a href="/feedback/create/">Send Teacher Feedback</a>
+						<li><a href="/feedback/parent_view/">View My Sent Feedback</a>
+						<li><a href="/att/today/">View today's attendance</a>
 						{% elif group == 'teacher' %}
 						<li><a href="/updates/all/">View All Updates</a></li>
 						<li><a href="/updates/create">Create a New Update</a></li>
+						<li><a href="/feedback/all/">View All Parent Feedback</a>
+						<li><a href="/att/create/">Update Attendance</a>
+						<li><a href="/att/today/">View today's Attendance</a>
 						{% endif %}
 					{% endif %}
 				</ul>

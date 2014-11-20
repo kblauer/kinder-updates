@@ -64,6 +64,31 @@ def create(request):
         return render_to_response('create_update.html', args)
     
     
+def create_from_template(request):
+    username = None
+    group = 'parent'
+    
+    if request.user.is_authenticated():
+        username = request.user.username
+        if request.user.has_perm('updates.add_update'):
+            group = 'teacher'
+            
+    if request.POST:
+        text = request.POST.get('template_1')
+        update = Update(updateText=text)
+        update.save()
+        
+        return HttpResponseRedirect('/updates/all')
+    
+    else:
+        args = {}
+        args.update(csrf(request))
+        
+        args['username'] = username
+        args['group'] = group
+        
+        return render_to_response('create_from_template.html', args)
+    
 def json_all(request):
     updates = Update.objects.all()
     data = serializers.serialize("json", updates)

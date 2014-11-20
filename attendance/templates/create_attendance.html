@@ -4,14 +4,15 @@
 
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Post update</h3>
+                    <h3 class="panel-title">Post Attendance</h3>
                   </div>
                   
-                  	<h3>To create an update from a template instead, <a href="/updates/create_from_template/">click here</a></h3>
+<!--                   	<h3>To create an update from a template instead, <a href="/updates/create_from_template/">click here</a></h3> -->
                   
-                  	<form action="/updates/create/" method="post">{% csrf_token %}
+                  	<form action="/att/create/" method="post">{% csrf_token %}
                   	{{ form }}
                   	<input type="submit" name="submit" value="Create Update">
                   	</form>      
                 </div>
+
 {% endblock %}

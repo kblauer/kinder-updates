@@ -20,6 +20,7 @@ urlpatterns = patterns('',
     
     
     # App-related urls
-    url(r'^updates/', include('updates.urls')),
-    
+    url(r'^updates/',   include('updates.urls')),
+    url(r'^feedback/',  include('feedback.urls')),
+    url(r'^att/',       include('attendance.urls')),
 )

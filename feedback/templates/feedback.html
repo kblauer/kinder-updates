@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+
+				<div id="Main" class="panel panel-info">
+
+					<h2>&nbsp;{{ feedback.feedbackText }}</h2>
+					<ul>
+						<li>Feedback ID: {{ feedback.id }}</li>
+						<li>Post Time: {{ feedback.postTime }}</li>
+						<li>Update Time: {{ feedback.updateTime }} </li>
+						<li>Parent ID: {{ feedback.sentByParent.id }}</li>
+						<li>Parent Name: {{ feedback.sentByParent.first_name }} {{ feedback.sentByParent.last_name }}</li>
+					</ul>
+				</div>
+
+{% endblock %}

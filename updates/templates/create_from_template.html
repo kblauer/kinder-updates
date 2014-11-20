@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Post update with Templates</h3>
+                  </div>
+                  
+                  
+                  
+                  	<form action="/updates/create_from_template/" method="post">{% csrf_token %}
+                  		
+                  		<select name="template_1">
+                  			<option value="We Did math!">We Did Math!</option>
+                  			<option value="Today we rocked history">Today we rocked history</option>
+                  			<option value="Recess.  All day, every day">Recess.  All day, every day</option>
+                  			<option value="Naptime!">Naptime!</option>
+                  			<option value="The kids are at PE right now">The kids are at PE right now</option>
+                  		</select>
+                  	
+                  	<input type="submit" name="submit" value="Create Update">
+                  	</form>      
+                </div>
+
+{% endblock %}

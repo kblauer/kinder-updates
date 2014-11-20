@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+                    <div id="Main" class="panel panel-info">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Feedback</h3>
+                      </div>
+
+                         <ul class="list-group">
+                         	
+                         	{% for fb in feedback %}
+                         		<li class="list-group-item"><a href="/feedback/get/{{ fb.id }}/">{{ fb.feedbackText }}</a></li>
+                         	{% endfor %}
+
+                         </ul>
+                    <!--   
+                      S
+                      <div class="panel-body">
+                        <ul>
+                            <div class="panel panel-default">
+
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Date placeholder</h3>
+                                </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Long udateLong udateLong udateLong udateLong udate</li>
+                                        <li class="list-group-item">Update 2</li>
+
+                                     </ul>
+
+
+                            </div>
+
+                        </ul>
+                      </div> -->
+                    </div>
+
+{% endblock %}

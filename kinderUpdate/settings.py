@@ -45,6 +45,9 @@ INSTALLED_APPS = (
 
     # PROJECT APPS
     'updates',
+    'feedback',
+    'kids',
+    'attendance',
 )
 
 MIDDLEWARE_CLASSES = (
