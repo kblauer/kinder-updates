@@ -14,3 +14,10 @@
 .project
 .pydevproject
 
+
+
+*.gradle
+/ANDROID/local.properties
+/ANDROID/.idea/workspace.xml
+*.DS_Store
+/ANDROID/build
