@@ -25,136 +25,59 @@ In order to login to the site, use the following credentials:
 
 
 <h3>  WINDOWS INSTRUCTIONS </h3>
-<ol>
-<li>Uninstall any and all versions of python you currently have installed (sorry :( )</li>
-<li>Install Python v2.7 (32-bit) and git
-    (make sure to add python to PATH in install options)
-    (for git install, choose Use git from Git Bash only, and 
-        checkout windows-style, commit unix-style line endings)
-</li>
 
-<li>go here: https://pypi.python.org/pypi/setuptools and install setuptools. For windows 7, download ez_setup.py and run in the command line 
+1. Uninstall any and all versions of python you currently have installed (sorry :( )
+2. Install Python v2.7 (32-bit) and git
+	(make sure to add python to PATH in install options)
+	(for git install, choose Use git from Git Bash only, and 
+		checkout windows-style, commit unix-style line endings)
+3. go here: https://pypi.python.org/pypi/setuptools and install setuptools
+	for windows 7, download ez_setup.py and run in the command line ```cd Downloads && python ez_setup.py```
 
-```cd Downloads && python ez_setup.py
-```
-</li>
-    
-<li> 
-```
-cd \path-to-python2.7-install\Scripts && easy_install pip
-```
-!! replace path-to-python2.7-install with your install location !!
-</li>
-        
-<li>
-```
-pip install virtualenvwrapper-win
-```
-</li>
+	
+4. ```cd \path-to-python2.7-install\Scripts && easy_install pip```
+		!! replace path-to-python2.7-install with your install location !!
+		
+5. ```pip install virtualenvwrapper-win```
 
-<li> 
-```
-mkvirtualenv kinderUpdate
-```
-</li>
+6. ```mkvirtualenv kinderUpdate```
 
-!!! Before continuing, you should have (kinderUpdate) at the beginning of your command line !!! 
-If you don't, type 
-```
-workon kinderUpdate
-``` 
-to get out of the virtualenv, type 
-```
-deactivate
-```
+**** Before continuing, you should have (kinderUpdate) at the beginning of your command line ***
+**** if you don't, type 'workon kinderUpdate'. to get out of the virtualenv, type 'deactivate' ***
 
-<li>
-```
-cd \
-```
-</li>
-<li>
-```
-pip install django
-```
-</li>
-<li>navigate to your desired project parent directory (e.g. C:\dev\) in windows explorer, then right click and press 'Git Bash Here'</li>
-<li>in the command line that pops up, enter 
-```
-git clone https://github.com/kblauer/kinder-updates.git
-```
-</li>
+7. ```cd \```
+8. ```pip install django```
+9. navigate to your desired project parent directory (e.g. C:\dev\) in windows explorer, 
+	then right click and press 'Git Bash Here'
+10. in the command line that pops up, enter ```git clone https://github.com/kblauer/kinder-updates.git```
 
-<li>To run the local django server, go back to normal windows command line, make sure you are in the correct virtualenv, and 
-```
-cd dev-path-here/kinder-updates && python manage.py runserver
-```
-</li>
-
-<li> Navigate to localhost:8000 in browser</li>
-</ol>
+10. To run the local django server, go back to normal windows command line, make sure you are in the correct virtualenv, and 
+	```cd dev-path-here/kinder-updates && python manage.py runserver```
+11. Navigate to ```localhost:8000``` in browser
 
 
 <h3>LINUX INSTRUCTIONS </h3>
 
-<ol>
-<li> Install Python v2.7 via Package manager</li>
-<li>install python-setuptools & git (both come from most package managers)</li>
-<li> 
-```
-sudo easy_install pip
-```
-</li>
-<li> 
-```
-sudo pip install virtualenvwrapper
-```
-</li>
-<li> add the following to your shell's startup file (.bashrc, .zshrc, etc)
+1. Install Python v2.7 from Package manager
+2. install python-setuptools & git (both come from most package managers)
+3. ```sudo easy_install pip```
+4. ```sudo pip install virtualenvwrapper```
+5.	add the following to your shell's startup file (.bashrc, .zshrc, etc)
+    ```
+	export WORKON_HOME=$HOME/.virtualenvs
+	export PROJECT_HOME=$HOME/directory-you-do-development-in
+	source /usr/local/bin/virtualenvwrapper.sh
+	```
+	replace directory-you-do-development-in with your directory workspace
+	
+6. ```mkvirtualenv kinderUpdate```
 
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/directory-you-do-development-in
-    source /usr/local/bin/virtualenvwrapper.sh
-    
-    !! replace directory-you-do-development-in with your directory workspace !!
-    
-<li> 
-```
-mkvirtualenv kinderUpdate
-```
-</li>
+**** Before continuing, you should have (kinderUpdate) at the beginning of your command line ***
+**** if you don't, type 'workon kinderUpdate'. to get out of the virtualenv, type 'deactivate' ***
 
-!!!! Before continuing, you should have (kinderUpdate) at the beginning of your command line !!!!
-If you don't, type 
-```
-workon kinderUpdate
-```
- to get out of the virtualenv, type 
-```
-deactivate
-```
-
-<li> 
-```
-pip install django
-```
-</li>
-<li> navigate to your desired project parent directory (e.g. ~/workspace/) </li>
-<li> 
-```
-git clone https://github.com/kblauer/kinder-updates.git
-``` 
-</li>
-
-<li>To run the local django server, 
-```
-cd kinder-updates && python manage.py runserver
-``` 
-</li>
-<li> Navigate to 
-```
-localhost:8000
-``` 
-in browser </li>
-
-</ol>
+7. ```pip install django```
+8. navigate to your desired project parent directory (e.g. ~/workspace/)
+9. ```git clone https://github.com/kblauer/kinder-updates.git```
+10. ```cd kinder-updates```
+11. To run the local django server, ```python manage.py runserver```
+12. Navigate to ```localhost:8000``` in browser
