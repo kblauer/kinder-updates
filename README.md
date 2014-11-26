@@ -35,29 +35,61 @@ In order to login to the site, use the following credentials:
 
 <li>go here: https://pypi.python.org/pypi/setuptools and install setuptools. For windows 7, download ez_setup.py and run in the command line 
 
-```cd Downloads && python ez_setup.py```
+```
+cd Downloads && python ez_setup.py
+```
 </li>
     
-<li> ```cd \path-to-python2.7-install\Scripts && easy_install pip```
+<li> 
+```
+cd \path-to-python2.7-install\Scripts && easy_install pip
+```
 !! replace path-to-python2.7-install with your install location !!
 </li>
         
-<li> ```pip install virtualenvwrapper-win``` </li>
+<li>
+```
+pip install virtualenvwrapper-win
+```
+</li>
 
-<li> ```mkvirtualenv kinderUpdate``` </li>
+<li> 
+```
+mkvirtualenv kinderUpdate
+```
+</li>
 
-**** Before continuing, you should have (kinderUpdate) at the beginning of your command line ***
-**** if you don't, type ```workon kinderUpdate``` to get out of the virtualenv, type ```deactivate``` ***
+!!! Before continuing, you should have (kinderUpdate) at the beginning of your command line !!! 
+If you don't, type 
+```
+workon kinderUpdate
+``` 
+to get out of the virtualenv, type 
+```
+deactivate
+```
 
-<li>```cd \```</li>
-<li>```pip install django```</li>
+<li>
+```
+cd \
+```
+</li>
+<li>
+```
+pip install django
+```
+</li>
 <li>navigate to your desired project parent directory (e.g. C:\dev\) in windows explorer, then right click and press 'Git Bash Here'</li>
 <li>in the command line that pops up, enter 
-```git clone https://github.com/kblauer/kinder-updates.git```
+```
+git clone https://github.com/kblauer/kinder-updates.git
+```
 </li>
 
 <li>To run the local django server, go back to normal windows command line, make sure you are in the correct virtualenv, and 
-    ```cd dev-path-here/kinder-updates && python manage.py runserver```
+```
+cd dev-path-here/kinder-updates && python manage.py runserver
+```
 </li>
 
 <li> Navigate to localhost:8000 in browser</li>
@@ -69,8 +101,16 @@ In order to login to the site, use the following credentials:
 <ol>
 <li> Install Python v2.7 via Package manager</li>
 <li>install python-setuptools & git (both come from most package managers)</li>
-<li> ```sudo easy_install pip```</li>
-<li> ```sudo pip install virtualenvwrapper```</li>
+<li> 
+```
+sudo easy_install pip
+```
+</li>
+<li> 
+```
+sudo pip install virtualenvwrapper
+```
+</li>
 <li> add the following to your shell's startup file (.bashrc, .zshrc, etc)
 
     export WORKON_HOME=$HOME/.virtualenvs
@@ -79,16 +119,43 @@ In order to login to the site, use the following credentials:
     
     !! replace directory-you-do-development-in with your directory workspace !!
     
-<li> ```mkvirtualenv kinderUpdate```</li>
+<li> 
+```
+mkvirtualenv kinderUpdate
+```
+</li>
 
-**** Before continuing, you should have (kinderUpdate) at the beginning of your command line ***
-**** if you don't, type ```workon kinderUpdate``` to get out of the virtualenv, type ```deactivate``` ***
+!!!! Before continuing, you should have (kinderUpdate) at the beginning of your command line !!!!
+If you don't, type 
+```
+workon kinderUpdate
+```
+ to get out of the virtualenv, type 
+```
+deactivate
+```
 
-<li> ```pip install django```</li>
+<li> 
+```
+pip install django
+```
+</li>
 <li> navigate to your desired project parent directory (e.g. ~/workspace/) </li>
-<li> ```git clone https://github.com/kblauer/kinder-updates.git``` </li>
+<li> 
+```
+git clone https://github.com/kblauer/kinder-updates.git
+``` 
+</li>
 
-<li>To run the local django server, ```cd kinder-updates && python manage.py runserver``` </li>
-<li> Navigate to ```localhost:8000``` in browser </li>
+<li>To run the local django server, 
+```
+cd kinder-updates && python manage.py runserver
+``` 
+</li>
+<li> Navigate to 
+```
+localhost:8000
+``` 
+in browser </li>
 
 </ol>
