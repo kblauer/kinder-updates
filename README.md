@@ -35,8 +35,7 @@ In order to login to the site, use the following credentials:
 
 <li>go here: https://pypi.python.org/pypi/setuptools and install setuptools. For windows 7, download ez_setup.py and run in the command line 
 
-```
-cd Downloads && python ez_setup.py
+```cd Downloads && python ez_setup.py
 ```
 </li>
     
