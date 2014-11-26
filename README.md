@@ -18,11 +18,10 @@ Any and all testing is equivalent for this version as well as the django local s
 
 In order to login to the site, use the following credentials:
 
-|TEACHER ROLE | PARENT ROLE |
-|----------------------------|
+|TEACHER ROLE       | PARENT ROLE       |
+|-------------------|-------------------|
 |username = teacher | username = parent |
 |password = test    | password = test   |
-|-------------------------------|
 
 
 <h3>  WINDOWS INSTRUCTIONS </h3>
@@ -33,14 +32,14 @@ In order to login to the site, use the following credentials:
     (for git install, choose Use git from Git Bash only, and 
         checkout windows-style, commit unix-style line endings)
 </li>
-<li>go here: https://pypi.python.org/pypi/setuptools and install setuptools
-    for windows 7, download ez_setup.py and run in the command line 
+
+<li>go here: https://pypi.python.org/pypi/setuptools and install setuptools. For windows 7, download ez_setup.py and run in the command line 
 
 ```cd Downloads && python ez_setup.py```
 </li>
     
 <li> ```cd \path-to-python2.7-install\Scripts && easy_install pip```
-        !! replace path-to-python2.7-install with your install location !!
+!! replace path-to-python2.7-install with your install location !!
 </li>
         
 <li> ```pip install virtualenvwrapper-win``` </li>
@@ -62,30 +61,32 @@ In order to login to the site, use the following credentials:
 </li>
 
 <li> Navigate to localhost:8000 in browser</li>
+</ol>
 
 
---------  LINUX INSTRUCTIONS -------------
+<h3>LINUX INSTRUCTIONS </h3>
 
-1. Python v2.7
-2. install python-setuptools & git (both come from most package managers)
-3. 'sudo easy_install pip'
-4. 'sudo pip install virtualenvwrapper'
-5.  add the following to your shell's startup file (.bashrc, .zshrc, etc)
+<ol>
+<li> Install Python v2.7 via Package manager</li>
+<li>install python-setuptools & git (both come from most package managers)</li>
+<li> ```sudo easy_install pip```</li>
+<li> ```sudo pip install virtualenvwrapper```</li>
+<li> add the following to your shell's startup file (.bashrc, .zshrc, etc)
 
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/directory-you-do-development-in
     source /usr/local/bin/virtualenvwrapper.sh
     
-    replace directory-you-do-development-in with your directory workspace
+    !! replace directory-you-do-development-in with your directory workspace !!
     
-6. 'mkvirtualenv kinderUpdate'
+<li> ```mkvirtualenv kinderUpdate```</li>
 
 **** Before continuing, you should have (kinderUpdate) at the beginning of your command line ***
-**** if you don't, type 'workon kinderUpdate'. to get out of the virtualenv, type 'deactivate' ***
+**** if you don't, type ```workon kinderUpdate``` to get out of the virtualenv, type ```deactivate``` ***
 
-7. 'pip install django'
-8. navigate to your desired project parent directory (e.g. ~/workspace/)
-9. 'git clone https://github.com/kblauer/kinder-updates.git'
+<li> ```pip install django```</li>
+<li> navigate to your desired project parent directory (e.g. ~/workspace/) </li>
+<li> ```git clone https://github.com/kblauer/kinder-updates.git``` </li>
 
-10. To run the local django server, 'cd kinder-updates' and then 'python manage.py runserver'
-11. Navigate to localhost:8000 in browser
+<li>To run the local django server, ```cd kinder-updates && python manage.py runserver``` </li>
+<li> Navigate to ```localhost:8000``` in browser </li>
