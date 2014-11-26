@@ -90,3 +90,5 @@ In order to login to the site, use the following credentials:
 
 <li>To run the local django server, ```cd kinder-updates && python manage.py runserver``` </li>
 <li> Navigate to ```localhost:8000``` in browser </li>
+
+</ol>
