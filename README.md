@@ -1,5 +1,5 @@
 <h1>Elementary Update</h1>
-<h3>A web, android, and iOS app for keeping track of your children while they are at school!</h3>
+<h4>A web, android, and iOS app for keeping track of your children while they are at school!</h4>
 
 <h2>Website Appendix / Setup Instructions</h2>
 
